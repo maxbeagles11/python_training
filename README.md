@@ -1,7 +1,8 @@
-# Welcome to a basic Python Training Repo!
+# Welcome to a basic Python training repo!
 
 This repo will show you how to structure a Python project and how to package it.
 It will include example scripts that will cover the basics for coding with Python (data types, data structures, functions, classes, etc.).
+It will also provide an opportunity to learn how to work with git and collaborating on a project.
 
 **Important notes**:
 - This repo assumes you are using a Windows computer. Though most of the same stuff should apply for Linux/Mac.
@@ -16,7 +17,7 @@ With that out of the way, let's see what you need to do to get started!
 ## Getting Started 
 
 🐍 **Step 1** Download and install Python.
-1. Find a version of Python you'd like to install [here](https://www.python.org/downloads/). I recommend 3.10.X and above.
+1. Find a version of Python you'd like to install [here](https://www.python.org/downloads/). I recommend 3.10.X and above to run any of the scripts. **Note**: to use the Poetry toml, please install 3.13.X.
 2. Pick the Windows 64-bit installer and then run it.
 3. Select the default options in the installer.
 4. Check your environment variables and add Python and Python/scripts to path (if they're not there already). Here's a [useful guide](https://www.howtogeek.com/787217/how-to-edit-environment-variables-on-windows-10-or-11/) on how to do this.
@@ -53,3 +54,11 @@ pip install poetry
 ```bash 
 poetry install
 ```
+
+## Project Structure
+
+
+## Running Scripts
+
+
+## Pushing Changes
