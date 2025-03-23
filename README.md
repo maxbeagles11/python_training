@@ -61,7 +61,7 @@ pre-commit install
 
 ## Project Structure
 The following are brief descriptions of each directory and file in the repo (shown with hierarchy):
-
+```
 📦 python_training # the root directory (and name of the repo)
 ├── 📂 src                          # Contains the main source code (only these contents get packaged)
 │   ├── 📂 python_training          # Python training scripts and modules (name of the package)
@@ -85,7 +85,7 @@ The following are brief descriptions of each directory and file in the repo (sho
 ├── 📄 pyproject.toml               # The main configuration file for the package (defines dependencies, metadata, etc.)
 ├── 📄 .pre-commit-config.yaml      # Defines what gets ran prior to making a commit
 ├── 📄 vscode_tips.md               # Tips and tricks for VS Code
-
+```
 ## Running Scripts
 
 #### Direct Runs
