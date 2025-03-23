@@ -2,4 +2,4 @@ python_training:
 version:
 - v0.1.0:
   - New Features:
-    - First commit.
+    - First commit (initial setup of repo).

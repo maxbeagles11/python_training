@@ -1,0 +1,45 @@
+name: CI Pipeline
+
+on: pull_request
+
+jobs:
+  ruff_format:
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: 3.13.2
+    - name: Install Ruff
+      run: |
+        python -m pip install poetry
+        poetry install
+    - name: Run Ruff format
+      run: poetry run python -m ruff format --check .
+  ruff_lint:
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: 3.13.2
+    - name: Install Ruff
+      run: |
+        python -m pip install poetry
+        poetry install
+    - name: Run Ruff linter
+      run: poetry run python -m ruff check .
+  test_build:
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: 3.13.2
+    - name: Install poetry
+      run: python -m pip install poetry
+    - name: Run Poetry build
+      run: python -m poetry build --format wheel

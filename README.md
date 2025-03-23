@@ -60,7 +60,31 @@ pre-commit install
 ```
 
 ## Project Structure
+The following are brief descriptions of each directory and file in the repo (shown with hierarchy):
 
+📦 python_training # the root directory (and name of the repo)
+├── 📂 src                          # Contains the main source code (only these contents get packaged)
+│   ├── 📂 python_training          # Python training scripts and modules (name of the package)
+|   |   ├── 📂 01_basics            # Contains script examples going over variables, data types, and data structures
+|   |   ├── 📂 02_control_flow      # Contains script examples going over logical expressions and loops
+|   |   ├── 📂 03_functions         # Contains script examples going over functions (reusable code)
+|   |   ├── 📂 04_oop_and_classes   # Contains script examples going over OOP fundamentals and classes
+│   │   ├── main.py                 # The main script for the package (has an entry point defined in the toml)
+│   │   ├── ascii_art.py            # Contains ASCII art for examples
+│   |   ├── __init__.py             # Marks this as a package (allows for imports -> this is needed for all directories that need to be imported)
+├── 📂 users                        # The users directory where anyone can make changes
+│   ├── 📂 example_user             # Tests for the training script
+│   |   ├── example.py              # A user's script
+├── 📂 coding_problems              # Contains challenges to practice what you've learned
+│   ├── 📂 register_access          # A project to validate a memory mapped register access using indirect access
+│   |   ├── sort_by_password.py     # A good exercise to better grasp lists and dicts
+├── 📄 README.md                    # Project documentation (what you're reading now!)
+├── 📄 CHANGELOG.yaml               # Tracks changes per release of the package
+├── 📄 .gitignore                   # Files to ignore in git (these don't get added to the repo)
+├── 📄 poetry.lock                  # Contains all the dependencies for the Poetry virtual environment (these are locked by version)
+├── 📄 pyproject.toml               # The main configuration file for the package (defines dependencies, metadata, etc.)
+├── 📄 .pre-commit-config.yaml      # Defines what gets ran prior to making a commit
+├── 📄 vscode_tips.md               # Tips and tricks for VS Code
 
 ## Running Scripts
 
@@ -104,3 +128,22 @@ run_main --help
 ```
 
 ## Pushing Changes
+I highly encourage users to practice the git process. In the spirit of enabling this, I've set up a `users` directory where anyone can submit their example code.
+If you're completely unfamiliar with git, check out the [documentation](https://www.atlassian.com/git)!
+
+For beginners, most changes follow this order:
+```bash
+git pull # grab all changes/branches from the repo; important for ensuring the local branch has updated info
+git checkout <branch name> # enter the name of the branch to switch to (needs to exist)
+git pull # [optional] pull all changes on that specific branch
+git add -A # add all changes to the staging area
+git commit -m "<Commit summary here (explain the changes)>" # create a commit
+git push # push the changes to the remote branch (on GitHub)
+```
+
+**Note:** Before making any changes, I recommend doing a `git pull` to avoid headaches with merge conflicts...But if you already have changes, it might be good idea to do a `git stash` first. Once the latest changes are pulled, then reload your changes with `git stash pop`.
+
+> [!TIP]
+>Since this repo uses `pre-commit`, submitted code will be validated and formatted automatically. So don't worry too much about formatting things yourself (just be sure to get used to how the code gets formatted).
+
+The master branch is pull-request (PR) protected, which means anyone trying to merge changes **must create a pull-request and follow the code review process**. Additionally, there will be continuous integration (CI) pipelines implemented through [`GitHub Actions`](https://docs.github.com/en/actions) that will do all the same checks as pre-commit (in case someone forgets to do `pre-commit install`). If these checks do not pass, then PRs won't be allowed to be merged.
