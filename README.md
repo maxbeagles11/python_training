@@ -10,6 +10,8 @@ It will also provide an opportunity to learn how to work with git and collaborat
 - This project uses `Poetry` as its package manager. Check it out [here](https://python-poetry.org/).
 - I am assuming you are very inexperienced with coding, so I will do my best to explain *everything*.
 
+> [!TIP]
+> If at any point you feel as though something was missed or wasn't covered well, please feel free to Google or chatGPT it. As an engineer, that's 50% of the job usually...
 
 With that out of the way, let's see what you need to do to get started!
 
@@ -21,8 +23,8 @@ With that out of the way, let's see what you need to do to get started!
 2. Pick the Windows 64-bit installer and then run it.
 3. Select the default options in the installer.
 4. Check your environment variables and add Python and Python/scripts to path (if they're not there already). Here's a [useful guide](https://www.howtogeek.com/787217/how-to-edit-environment-variables-on-windows-10-or-11/) on how to do this.
-a Ex: C:\Users\my_user\AppData\Local\Programs\Python\Python313
-b Ex: C:\Users\my_user\AppData\Local\Programs\Python\Python313\Scripts
+    > Ex: C:\Users\my_user\AppData\Local\Programs\Python\Python313
+    > Ex: C:\Users\my_user\AppData\Local\Programs\Python\Python313\Scripts
 5. Confirm that `python` works in your terminal by running:
 ```bash
 python --version
@@ -105,7 +107,7 @@ poetry shell
 ```
 Then you can use the `Direct Runs` methods described above.
 
-If you don't want to launch the venv, then you can still run from within it by pre-pending `poetry run` to your Python command:
+If you don't want to launch the venv, then you can still run from within it by prepending `poetry run` to your Python command:
 ```bash
 poetry run python python_training/main.py <insert arguments here>
 ```
