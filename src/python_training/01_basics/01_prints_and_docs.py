@@ -32,14 +32,14 @@ import os
 
 # This is an explicit import. Unlike 'import os', this will only specifically
 # import the objects and functions described by the developer.
-from sys import exception
+from sys import exception  # noqa
 
 # Here are more examples of imports
-from datetime import datetime, date, UTC
-from time import sleep, asctime
+from datetime import datetime, date, UTC  # noqa
+from time import sleep, asctime  # noqa
 
 # If for some reason you want to rename the import, you can do so like this:
-from pprint import pprint as pretty_print
+from pprint import pprint as pretty_print  # noqa
 
 
 # ----------------------------------------------
