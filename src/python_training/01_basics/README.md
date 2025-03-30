@@ -14,6 +14,7 @@ These principles help to design **modular, flexible code** that is **easy to mai
 As we move through each section, each of these pillars will be put into action, whether you are aware of it or not. You don't need to know the exact definitions, just try to learn what they represent as you go through this training.
 
 I tell everyone the same thing:
+
 `Once you understand that *everything* in Python is an object, it gets a lot easier to learn and code.`
 
 
