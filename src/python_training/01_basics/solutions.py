@@ -1,9 +1,4 @@
-"""This script contains simple problems to help
-you grasp all of the concepts in this section.
-
-The solutions to each problem will be in the 'solutions.py'
-script. Good luck!
-"""
+"""The solutions to the problems in 'try_these_problems.py'."""
 
 # -------------------------
 # 01_prints_and_docs.py
@@ -18,7 +13,16 @@ script. Good luck!
     3. Print the Python documentation for the print() function (use help()).
 """
 
-# <Write your code here>
+# Solution for Problem 1: Printing "Hello, world!"
+print("Hello, world!")
+
+# Solution for Problem 2: Print name and age
+name = "John"
+age = 25
+print(f"My name is {name} and I am {age} years old.")
+
+# Solution for Problem 3: Print documentation for print function
+help(print)
 
 
 # -------------------------
@@ -38,7 +42,21 @@ script. Good luck!
     5. Change the value of x to 20 and y to 15. Recalculate the sum and print the new result.
 """
 
-# <Write your code here>
+# Solution for Problem 1: Assigning values to variables
+x = 10
+y = 5
+
+# Solution for Problem 2: Calculating the sum of x and y
+sum_result = x + y
+print(f"The sum of x and y is: {sum_result}")
+
+# Solution for Problem 3: Changing values of x and y
+x = 20
+y = 15
+
+# Recalculate the sum with the new values
+sum_result = x + y
+print(f"The sum of x and y with the new values is: {sum_result}")
 
 
 # -------------------------
@@ -56,4 +74,18 @@ script. Good luck!
     4. Create a set of unique numbers from the list of numbers and print it.
 """
 
-# <Write your code here>
+# Solution for Problem 1: List of numbers
+numbers = [1, 2, 3, 4, 5]
+print(f"List of numbers: {numbers}")
+
+# Solution for Problem 2: Tuple of fruits
+fruits = ("apple", "banana", "cherry")
+print(f"Tuple of fruits: {fruits}")
+
+# Solution for Problem 3: Dictionary with personal information
+person_info = {"name": "John", "age": 25, "city": "New York"}
+print(f"Dictionary: {person_info}")
+
+# Solution for Problem 4: Set of unique numbers from the list
+unique_numbers = set(numbers)
+print(f"Set of unique numbers: {unique_numbers}")

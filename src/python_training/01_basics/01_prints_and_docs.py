@@ -168,6 +168,7 @@ class Animal:
 # We use the built-in 'print' function to convey information of our code's execution.
 # This can be useful for when we are trying to fix our code (called 'debugging').
 # They can also be used for letting the user know what's going on.
+# Note: All prints go to the terminal you ran the script from.
 
 print("This is a valid print.")
 print(120)  # This is also a valid print.

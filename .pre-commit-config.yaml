@@ -9,6 +9,7 @@ repos:
   - id: check-yaml
   - id: end-of-file-fixer
   - id: check-docstring-first
+    exclude: '.*(solutions|try_these_problems)\.py$'
   - id: mixed-line-ending
   - id: check-merge-conflict
   - id: debug-statements
