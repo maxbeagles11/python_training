@@ -107,7 +107,7 @@ poetry shell
 ```
 Then you can use the `Direct Runs` methods described above.
 
-If you don't want to launch the venv, then you can still run from within it by pre-pending `poetry run` to your Python command:
+If you don't want to launch the venv, then you can still run from within it by prepending `poetry run` to your Python command:
 ```bash
 poetry run python python_training/main.py <insert arguments here>
 ```
