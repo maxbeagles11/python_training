@@ -23,4 +23,5 @@ This folder will cover the following basic concepts:
 2. Variables.
 3. Data Types and Data Structures.
 
+## 📂 Practice
 Additionally, there are some problems you can try in `try_these_problems.py` to practice what you've learned. The solutions will be found in `solutions.py`.

@@ -193,3 +193,55 @@ print("The number of iterations are: " + str(ITERATIONS))
 # You can include logic in the formatting as well
 print(f"The number of iterations doubled is {ITERATIONS * 2} \n")
 print(f"The current working directory is: {os.getcwd()} \n")
+
+
+# ----------------------------------------------
+# ----------------------------------------------
+# Script Execution Order and Variable Scope
+# ----------------------------------------------
+# ----------------------------------------------
+
+# When you run a Python script, the interpreter executes the code *top to bottom*, line by line.
+# This means that any variable, function, or class MUST be defined before it is used.
+
+# Example: ❌ This will result in a NameError because 'x' is not defined yet.
+# print(x)
+
+# ✅ This is valid because 'x' has been defined above this line.
+x = 10
+print(f"x is: {x}")
+
+
+# Variables defined *inside* a function only exist within that function.
+def my_func() -> None:
+    """Example function."""
+    y = 20
+    print(f"Inside function: y is {y}")
+
+
+my_func()
+
+# ❌ This will cause an error because 'y' is local to my_func and doesn't exist out here.
+# print(y)
+
+# You can define a variable at the top level (outside of any function/class)
+# and use it anywhere *after* its definition.
+global_var = "Hello!"
+
+
+def print_global_var():
+    print(
+        global_var,
+    )  # ✅ This works because global_var is defined above this function.
+
+
+print_global_var()
+
+# If you try to use a variable before defining it, Python will raise a NameError.
+# That’s why it’s important to understand the *order of execution* and *scope*.
+
+# In summary:
+# - Python runs top-to-bottom.
+# - You can only use something (a variable, function, etc.) *after* it's been defined.
+# - Anything created inside a function only exists inside that function (local scope).
+# - Global variables exist anywhere in the script *after* they're defined.
