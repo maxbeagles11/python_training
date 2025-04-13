@@ -21,6 +21,6 @@ I tell everyone the same thing:
 This folder will cover the following basic concepts:
 1. Prints and Documentation.
 2. Variables.
-3. Data Types and Data Structures
+3. Data Types and Data Structures.
 
 Additionally, there are some problems you can try in `try_these_problems.py` to practice what you've learned. The solutions will be found in `solutions.py`.

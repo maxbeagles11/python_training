@@ -68,7 +68,7 @@ The following are brief descriptions of each directory and file in the repo (sho
 ├── 📂 src                          # Contains the main source code (only these contents get packaged)
 │   ├── 📂 python_training          # Python training scripts and modules (name of the package)
 |   |   ├── 📂 01_basics            # Contains script examples going over variables, data types, and data structures
-|   |   ├── 📂 02_control_flow      # Contains script examples going over logical expressions and loops
+|   |   ├── 📂 02_control_flow      # Contains script examples going over logical expressions, loops, and exceptions
 |   |   ├── 📂 03_functions         # Contains script examples going over functions (reusable code)
 |   |   ├── 📂 04_oop_and_classes   # Contains script examples going over OOP fundamentals and classes
 │   │   ├── main.py                 # The main script for the package (has an entry point defined in the toml)
