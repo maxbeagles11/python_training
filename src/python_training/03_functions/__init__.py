@@ -1,1 +1,1 @@
-"""Init file for data_types directory."""
+"""Init file for functions directory."""

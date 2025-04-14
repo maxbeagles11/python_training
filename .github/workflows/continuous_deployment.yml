@@ -1,0 +1,36 @@
+name: Continuous Deployment
+
+on:
+  push:
+    branches:
+      - master  # This can be changed to whichever branch you prefer
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out the repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.13'
+
+    - name: Install Poetry
+      run: |
+        pip install poetry
+
+    - name: Install dependencies
+      run: poetry install
+
+    - name: Build the package
+      run: poetry build
+
+    - name: Upload wheel artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: python-training-wheel
+        path: dist/*.whl
+    # We could add other steps to upload the wheel file somewhere, like PyPi.
