@@ -52,7 +52,7 @@ jobs:
     - name: Build the package
       run: poetry build
     - name: Upload wheel artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v2
       with:
         name: python-training-wheel
         path: dist/*.whl
