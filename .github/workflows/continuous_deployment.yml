@@ -37,7 +37,7 @@ jobs:
       run: poetry run ruff check .
 
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: [ruff_format, ruff_lint]  # Only build if these jobs pass
     steps:
     - uses: actions/checkout@v4
