@@ -11,7 +11,7 @@ It will also provide an opportunity to learn how to work with git and collaborat
 - I am assuming you are very inexperienced with coding, so I will do my best to explain *everything*.
 
 > [!TIP]
-> If at any point you feel as though something was missed or wasn't covered well, please feel free to Google or chatGPT it. As an engineer, that's 50% of the job usually...
+> If at any point you feel as though something was missed or wasn't covered well, please feel free to Google or chatGPT it. As an engineer myself, that's 50% of the job usually...
 
 With that out of the way, let's see what you need to do to get started!
 
@@ -68,7 +68,7 @@ The following are brief descriptions of each directory and file in the repo (sho
 ├── 📂 src                          # Contains the main source code (only these contents get packaged)
 │   ├── 📂 python_training          # Python training scripts and modules (name of the package)
 |   |   ├── 📂 01_basics            # Contains script examples going over variables, data types, and data structures
-|   |   ├── 📂 02_control_flow      # Contains script examples going over logical expressions and loops
+|   |   ├── 📂 02_control_flow      # Contains script examples going over logical expressions, loops, and exceptions
 |   |   ├── 📂 03_functions         # Contains script examples going over functions (reusable code)
 |   |   ├── 📂 04_oop_and_classes   # Contains script examples going over OOP fundamentals and classes
 │   │   ├── main.py                 # The main script for the package (has an entry point defined in the toml)
@@ -80,6 +80,9 @@ The following are brief descriptions of each directory and file in the repo (sho
 ├── 📂 coding_problems              # Contains challenges to practice what you've learned
 │   ├── 📂 register_access          # A project to validate a memory mapped register access using indirect access
 │   |   ├── sort_by_password.py     # A good exercise to better grasp lists and dicts
+├── 📂 .github                      # Contains workflows to be used within GitHub Actions (GHA)
+│   ├── continuous_integration.yml  # A workflow that provides automatic validation of changes made in a branch
+│   ├── continuous_deployment.yml   # A workflow that automatically packages the project when a release is made
 ├── 📄 README.md                    # Project documentation (what you're reading now!)
 ├── 📄 CHANGELOG.yaml               # Tracks changes per release of the package
 ├── 📄 .gitignore                   # Files to ignore in git (these don't get added to the repo)

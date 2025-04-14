@@ -4,7 +4,7 @@ on: pull_request
 
 jobs:
   ruff_format:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
     - name: Install Python
@@ -18,7 +18,7 @@ jobs:
     - name: Run Ruff format
       run: poetry run python -m ruff format --check .
   ruff_lint:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
     - name: Install Python
@@ -32,7 +32,7 @@ jobs:
     - name: Run Ruff linter
       run: poetry run python -m ruff check .
   test_build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
     - name: Install Python

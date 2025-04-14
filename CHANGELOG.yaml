@@ -2,4 +2,6 @@ python_training:
 version:
 - v0.1.0:
   - New Features:
-    - First commit (initial setup of repo).
+    - Added all training folders.
+    - Added all GHA workflows.
+    - Added all documentation.
