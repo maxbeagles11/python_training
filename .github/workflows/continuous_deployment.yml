@@ -37,7 +37,7 @@ jobs:
       run: poetry run ruff check .
 
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     needs: [ruff_format, ruff_lint]  # Only build if these jobs pass
     steps:
     - uses: actions/checkout@v4
@@ -52,7 +52,7 @@ jobs:
     - name: Build the package
       run: poetry build
     - name: Upload wheel artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: python-training-wheel
         path: dist/*.whl
